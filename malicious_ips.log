@@ -1,3 +1,42 @@
+=====================================
+  THREAT INTELLIGENCE REPORT
+  HIGH-RISK IP ADDRESSES (Score >90)
+=====================================
+
+🚨 SECURITY ALERT SUMMARY
+--------------------------
+This file contains the automated threat detection results from the SIEM IP 
+Analysis Tool. All IP addresses listed here have been confirmed as malicious 
+based on AbuseIPDB threat intelligence scoring and have been automatically 
+blocked through Windows Firewall integration.
+
+🎯 CLASSIFICATION CRITERIA
+--------------------------
+IPs are flagged as malicious when they meet ANY of the following conditions:
+✓ AbuseIPDB Abuse Confidence Score > 90%
+✓ Multiple abuse reports from distinct users
+✓ Active Tor network participation
+✓ Pattern matching with known threat indicators
+
+📊 REPORT STRUCTURE
+-------------------
+Each blocked IP entry includes:
+• Timestamp of detection and blocking action
+• Target IP address that was blocked
+• Specific reason for classification as malicious
+• Automatic firewall rule implementation status
+
+🔒 AUTOMATED RESPONSE ACTIONS
+-----------------------------
+For each confirmed malicious IP, the system automatically:
+1. Adds Windows Firewall blocking rule
+2. Logs the action with detailed reasoning
+3. Updates the security audit trail
+4. Prevents all future traffic from the IP
+
+📝 SAMPLE REPORT ENTRIES
+------------------------
+
 2025-07-20 11:17:38,311 - Blocked IP: 109.70.100.2 due to: Abuse confidence score > 90 or other malicious indicators
 2025-07-20 11:17:39,774 - Blocked IP: 198.98.51.189 due to: Abuse confidence score > 90 or other malicious indicators
 2025-07-20 11:17:41,666 - Blocked IP: 185.220.101.5 due to: Abuse confidence score > 90 or other malicious indicators
@@ -32,3 +71,4 @@
 2025-07-20 11:18:13,129 - Blocked IP: 107.189.14.4 due to: Abuse confidence score > 90 or other malicious indicators
 2025-07-20 11:18:13,855 - Blocked IP: 109.70.100.4 due to: Abuse confidence score > 90 or other malicious indicators
 2025-07-20 11:18:14,559 - Blocked IP: 179.43.182.232 due to: Abuse confidence score > 90 or other malicious indicators
+
