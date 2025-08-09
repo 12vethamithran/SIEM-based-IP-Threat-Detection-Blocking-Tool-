@@ -1,4 +1,5 @@
 SIEM IP Threat Detection & Blocking Tool 🛡️
+
 A powerful Python-based SIEM (Security Information and Event Management) tool that automatically detects malicious IP addresses from log files using AbuseIPDB threat intelligence and implements real-time blocking through Windows Firewall integration.
 🚀 Key Features
 🔍 Intelligent Threat Detection
