@@ -1,3 +1,64 @@
+=====================================
+    NETWORK LOG FILES - IP COLLECTION
+=====================================
+
+📋 FILE PURPOSE
+---------------
+This file contains raw IP addresses extracted from various network sources including:
+• Firewall logs
+• Access logs 
+• Security event logs
+• Network monitoring systems
+• SIEM platform exports
+
+🎯 DATA SOURCE
+--------------
+These IP addresses represent actual network traffic that has been flagged for 
+security analysis. The IPs are collected from live network environments and 
+require threat intelligence validation to determine their malicious nature.
+
+📊 EXPECTED CONTENT FORMAT
+--------------------------
+• Plain text IP addresses (IPv4 format)
+• One IP per line or extracted from log entries
+• Mixed legitimate and potentially malicious addresses
+• No pre-filtering applied - raw data for analysis
+
+🔍 ANALYSIS WORKFLOW
+--------------------
+1. IP addresses are extracted using regex pattern matching
+2. Each IP is queried against AbuseIPDB threat intelligence
+3. Threat scoring and classification is performed
+4. Malicious IPs are identified and blocked automatically
+5. Results are logged in the threat detection report
+
+⚠️  DATA HANDLING NOTES
+-----------------------
+• Contains potentially sensitive network information
+• IPs may include internal and external addresses  
+• Should be processed in secure environment only
+• Regular cleanup recommended for privacy compliance
+
+🔧 INTEGRATION USAGE
+--------------------
+This file serves as the INPUT for the SIEM IP Threat Detection Tool:
+- Feed directly into SIEM_Tool.py for automated processing
+- Compatible with batch analysis workflows
+- Supports continuous monitoring pipelines
+
+📝 SAMPLE CONTENT PREVIEW
+-------------------------
+140.238.162.131
+146.70.196.52  
+123.209.214.119
+89.190.156.231
+[...additional IP addresses...]
+
+Some Ip Addresses are given below......
+
+
+
+
 140.238.162.131 
 146.70.196.52
 123.209.214.119 
@@ -49,3 +110,62 @@
 185.220.101.8
 185.220.101.12
 
+=====================================
+    NETWORK LOG FILES - IP COLLECTION
+=====================================
+
+📋 FILE PURPOSE
+---------------
+This file contains raw IP addresses extracted from various network sources including:
+• Firewall logs
+• Access logs 
+• Security event logs
+• Network monitoring systems
+• SIEM platform exports
+
+🎯 DATA SOURCE
+--------------
+These IP addresses represent actual network traffic that has been flagged for 
+security analysis. The IPs are collected from live network environments and 
+require threat intelligence validation to determine their malicious nature.
+
+📊 EXPECTED CONTENT FORMAT
+--------------------------
+• Plain text IP addresses (IPv4 format)
+• One IP per line or extracted from log entries
+• Mixed legitimate and potentially malicious addresses
+• No pre-filtering applied - raw data for analysis
+
+🔍 ANALYSIS WORKFLOW
+--------------------
+1. IP addresses are extracted using regex pattern matching
+2. Each IP is queried against AbuseIPDB threat intelligence
+3. Threat scoring and classification is performed
+4. Malicious IPs are identified and blocked automatically
+5. Results are logged in the threat detection report
+
+⚠️  DATA HANDLING NOTES
+-----------------------
+• Contains potentially sensitive network information
+• IPs may include internal and external addresses  
+• Should be processed in secure environment only
+• Regular cleanup recommended for privacy compliance
+
+🔧 INTEGRATION USAGE
+--------------------
+This file serves as the INPUT for the SIEM IP Threat Detection Tool:
+- Feed directly into SIEM_Tool.py for automated processing
+- Compatible with batch analysis workflows
+- Supports continuous monitoring pipelines
+
+📝 SAMPLE CONTENT PREVIEW
+-------------------------
+140.238.162.131
+146.70.196.52  
+123.209.214.119
+89.190.156.231
+[...additional IP addresses...]
+
+=====================================
+    READY FOR THREAT ANALYSIS
+=====================================
